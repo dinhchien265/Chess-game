@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/boardLayout"
+        android:layout_width="408dp"
+        android:layout_height="408dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/board_background"
+        android:orientation="vertical"
+        android:weightSum="8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/t00"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t10"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t20"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t30"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t40"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t50"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t60"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t70"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/t01"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t11"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t21"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t31"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t41"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t51"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t61"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t71"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/t02"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t12"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t22"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t32"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t42"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t52"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t62"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t72"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/t03"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t13"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t23"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t33"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t43"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t53"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t63"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t73"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/t04"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t14"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t24"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t34"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t44"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t54"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t64"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t74"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/t05"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t15"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t25"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t35"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t45"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t55"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t65"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t75"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/t06"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t16"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t26"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t36"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t46"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t56"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t66"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t76"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/t07"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t17"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t27"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t37"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t47"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t57"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t67"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+
+            <Button
+                android:id="@+id/t77"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:visibility="visible">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/black_rook1"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_rook" />
+
+    <ImageView
+        android:id="@+id/black_knight1"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_knight" />
+    <ImageView
+        android:id="@+id/black_bishop1"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginLeft="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_bishop" />
+    <ImageView
+        android:id="@+id/black_queen"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginLeft="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_queen" />
+    <ImageView
+        android:id="@+id/black_king"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginLeft="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_king" />
+    <ImageView
+        android:id="@+id/black_bishop2"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="255dp"
+        android:layout_marginLeft="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_bishop" />
+    <ImageView
+        android:id="@+id/black_knight2"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="306dp"
+        android:layout_marginLeft="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_knight" />
+    <ImageView
+        android:id="@+id/black_rook2"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="357dp"
+        android:layout_marginLeft="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_rook" />
+
+    <ImageView
+        android:id="@+id/black_pawn1"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_pawn" />
+
+    <ImageView
+        android:id="@+id/black_pawn2"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_pawn" />
+
+    <ImageView
+        android:id="@+id/black_pawn3"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginTop="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_pawn" />
+
+    <ImageView
+        android:id="@+id/black_pawn4"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginLeft="153dp"
+        android:layout_marginTop="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_pawn" />
+
+    <ImageView
+        android:id="@+id/black_pawn5"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_pawn" />
+
+    <ImageView
+        android:id="@+id/black_pawn6"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="255dp"
+        android:layout_marginLeft="255dp"
+        android:layout_marginTop="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_pawn" />
+
+    <ImageView
+        android:id="@+id/black_pawn7"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="306dp"
+        android:layout_marginLeft="306dp"
+        android:layout_marginTop="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_pawn" />
+
+    <ImageView
+        android:id="@+id/black_pawn8"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="357dp"
+        android:layout_marginLeft="357dp"
+        android:layout_marginTop="51dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/black_pawn" />
+
+<!--    white piece -->
+
+    <ImageView
+        android:id="@+id/white_rook1"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="357dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_rook" />
+
+    <ImageView
+        android:id="@+id/white_knight1"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="357dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_knight" />
+
+    <ImageView
+        android:id="@+id/white_bishop1"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginTop="357dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_bishop" />
+
+    <ImageView
+        android:id="@+id/white_queen"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginLeft="153dp"
+        android:layout_marginTop="357dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_queen" />
+
+    <ImageView
+        android:id="@+id/white_king"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="357dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_king" />
+
+    <ImageView
+        android:id="@+id/white_bishop2"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="255dp"
+        android:layout_marginLeft="255dp"
+        android:layout_marginTop="357dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_bishop" />
+
+    <ImageView
+        android:id="@+id/white_knight2"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="306dp"
+        android:layout_marginLeft="306dp"
+        android:layout_marginTop="357dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_knight" />
+
+    <ImageView
+        android:id="@+id/white_rook2"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="357dp"
+        android:layout_marginLeft="357dp"
+        android:layout_marginTop="357dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_rook" />
+
+    <ImageView
+        android:id="@+id/white_pawn1"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="306dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_pawn" />
+
+    <ImageView
+        android:id="@+id/white_pawn2"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="306dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_pawn" />
+
+    <ImageView
+        android:id="@+id/white_pawn3"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginTop="306dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_pawn" />
+
+    <ImageView
+        android:id="@+id/white_pawn4"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginLeft="153dp"
+        android:layout_marginTop="306dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_pawn" />
+
+    <ImageView
+        android:id="@+id/white_pawn5"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="306dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_pawn" />
+
+    <ImageView
+        android:id="@+id/white_pawn6"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="255dp"
+        android:layout_marginLeft="255dp"
+        android:layout_marginTop="306dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_pawn" />
+
+    <ImageView
+        android:id="@+id/white_pawn7"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="306dp"
+        android:layout_marginLeft="306dp"
+        android:layout_marginTop="306dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_pawn" />
+
+    <ImageView
+        android:id="@+id/white_pawn8"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="357dp"
+        android:layout_marginLeft="357dp"
+        android:layout_marginTop="306dp"
+        app:layout_constraintStart_toStartOf="@+id/boardLayout"
+        app:layout_constraintTop_toTopOf="@+id/boardLayout"
+        app:srcCompat="@drawable/white_pawn" />
+
+    <Button
+        android:id="@+id/newgame"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginRight="130dp"
+        android:text="New Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

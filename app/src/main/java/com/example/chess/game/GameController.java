@@ -1,0 +1,158 @@
+package com.example.chess.game;
+
+import com.example.chess.pieces.*;
+import com.example.chess.player.AlphaBetaPlayer;
+
+
+import java.util.ArrayList;
+
+public class GameController {
+    public ChessBoard chessBoard;
+    Position firstPosition;
+    public boolean turn = Piece.WHITE;
+    public boolean humanColor = Piece.WHITE;
+    boolean PvC = true; // false la che do nguoi choi voi nguoi
+    AlphaBetaPlayer alphaBetaPlayer = new AlphaBetaPlayer(Piece.BLACK, this);
+    public ArrayList<Board> boardsList = new ArrayList<>();
+    public boolean stopThread = false;
+    public int count = 0;//dem so nuoc da di
+
+
+    public static void main(String[] args) {
+        GameController gc = new GameController();
+    }
+
+    public GameController() {
+        chessBoard = new ChessBoard(this);
+        boardsList.add(chessBoard.board.clone());
+        System.out.println(chessBoard.board.toString());
+        System.out.println(chessBoard.board.tiles[3][0].getPiece().toString());
+    }
+
+    public void newGame() {
+        stopThread = true;
+        count=0;
+        boardsList=new ArrayList<>();
+        turn = true;
+        chessBoard.board = new Board();
+//        chessBoard.setImageIcon(chessBoard.board.tiles);
+//        chessBoard.paintBoard();
+        boardsList.add(chessBoard.board.clone());
+//        restoreBackground();
+        if (alphaBetaPlayer.getColor() && PvC) {
+            alphaBetaPlayer.makeMove(chessBoard.board);
+            count++;
+            turn = !turn;
+//            chessBoard.paintBoard();
+            boardsList.add(chessBoard.board.clone());
+        }
+
+    }
+
+    public void click(Position position) {
+        if (PvC && turn != humanColor)
+            return;
+        Tile tile = chessBoard.board.getTile(position);
+        if (tile.isOccupied() && tile.getPiece().getColor() == turn){
+            firstPosition = position;
+        }
+        else if (firstPosition != null) {
+            Move move = new Move(firstPosition, position);
+//            chessBoard.board.makeMove(move);
+
+            ArrayList<Move> moves = chessBoard.board.getMoves(turn);
+            for (int i = 0; i < moves.size(); ++i) {
+                if ((moves.get(i)).equals(move)) {
+                    chessBoard.board.tiles[move.getX1()][move.getY1()].getPiece().makeMove(move);
+                    if(chessBoard.board.tiles[move.getX2()][move.getY2()].getPiece()!=null){
+                        chessBoard.board.tiles[move.getX2()][move.getY2()].getPiece().hide();
+                    }
+                    chessBoard.board.makeMove(move);
+
+                    stopThread = false;
+                    count++;
+                    turn = !turn;
+                    firstPosition = null;
+
+
+                    System.out.println(chessBoard.board.toString());
+
+                    if (PvC) {
+                        new Thread(alphaBetaPlayer).start();
+                    }
+                    break;
+                }
+            }
+        }
+    }
+
+//    public void undo() {
+//        if(PvC&&!humanColor&&count<2)
+//            return;
+//        if(count<1)
+//            return;
+//        if(!PvC){
+//            count--;
+//            turn =!turn;
+//        }
+//        else if(turn!=humanColor){
+//            stopThread=true;
+//            count-=1;
+//            turn=!turn;
+//        }
+//        else count-=2;
+//
+//        chessBoard.board = boardsList.get(count).clone();
+//        chessBoard.setImageIcon(chessBoard.board.tiles);
+//        chessBoard.paintBoard();
+//        restoreBackground();
+//    }
+
+//    public void redo() {
+//        if(boardsList.size()<count+2)
+//            return;
+//        if(PvC && boardsList.size()<count+3)
+//            return;
+//        if(PvC)
+//            count+=2;
+//        else {
+//            count++;
+//            turn=!turn;
+//        }
+//        chessBoard.board = boardsList.get(count).clone();
+//        chessBoard.setImageIcon(chessBoard.board.tiles);
+//        chessBoard.paintBoard();
+//        restoreBackground();
+//    }
+    //to mau nhung o quan co duoc chon co the di
+//    private void setBackground(){
+//        chessBoard.jButton[firstPosition.getX()][firstPosition.getY()].setBackground(Color.BLUE);
+//
+//        Piece piece=chessBoard.board.tiles[firstPosition.getX()][firstPosition.getY()].getPiece();
+//        ArrayList<Move> moves=piece.getMoves(chessBoard.board,firstPosition.getX(),firstPosition.getY());
+//        for (int i = 0; i < moves.size(); i++) {
+//            ArrayList<Move> checkThis = new ArrayList<Move>(moves.subList(i, i + 1));
+//            if(chessBoard.board.isCheckAfter(turn,checkThis)){
+//                moves.remove(checkThis.get(0));
+//                i--;
+//            }
+//        }
+//        for (int i = 0; i < moves.size(); i++) {
+//            chessBoard.jButton[moves.get(i).getX2()][moves.get(i).getY2()].setBackground(Color.BLUE);
+//        }
+//    }
+
+//    private void restoreBackground(){
+//        for (int y = 0; y < 8; y++) {
+//            for (int x = 0; x < 8; x++) {
+//                if ((x % 2 == 0 && y % 2 == 0) || (x % 2 == 1 && y % 2 == 1)) {
+//                    chessBoard.jButton[x][y].setBackground(Color.YELLOW);
+//                }
+//                else{
+//                    chessBoard.jButton[x][y].setBackground(Color.WHITE);
+//                }
+//            }
+//        }
+//    }
+
+}
